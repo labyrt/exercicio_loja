@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Casa Verde Tea & Coffee</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+  <div class="cart-overlay js-cart-overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark">☘</span>
+        <span class="brand-text">
+          <strong>Casa Verde</strong>
+          <small>Tea & Coffee</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#colecao">Coleção</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="cart-btn js-open-cart" type="button" aria-label="Abrir carrinho">
+        <span class="cart-btn-icon">👜</span>
+        <span class="cart-btn-text">Carrinho</span>
+        <span class="cart-badge js-cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">blends autorais • cafés especiais • chás gelados</span>
+          <h1>Uma pausa refinada para o seu dia.</h1>
+          <p>
+            A Casa Verde une sabor, aroma e estética em uma experiência acolhedora.
+            Nossa curadoria inclui chás clássicos, infusões premium, cafés especiais e
+            bebidas geladas pensadas para momentos leves e elegantes.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#colecao">Explorar coleção</a>
+            <a class="btn btn-secondary" href="#sobre">Conhecer a casa</a>
+          </div>
+
+          <div class="hero-pills">
+            <span>Chás clássicos</span>
+            <span>Gelados artesanais</span>
+            <span>Cafés especiais</span>
+            <span>Linha premium</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://images.pexels.com/photos/20013054/pexels-photo-20013054.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Xícara de chá em ambiente elegante"
+          />
+          <div class="hero-card-box">
+            <strong>Blend em destaque</strong>
+            <span>chá verde com notas florais e acabamento suave</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.pexels.com/photos/16604559/pexels-photo-16604559.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Chá servido com atmosfera acolhedora"
+          />
+        </div>
+
+        <div class="about-copy">
+          <span class="section-tag">sobre a loja</span>
+          <h2>Seleção pensada para quem valoriza sabor e calma.</h2>
+          <p>
+            A Casa Verde foi desenhada como uma boutique contemporânea de bebidas quentes
+            e geladas. A proposta mistura tons bege e verdes suaves, identidade sofisticada
+            e uma navegação simples para destacar cada produto com elegância.
+          </p>
+          <p>
+            Aqui você encontra itens para diferentes momentos do dia: chás pretos encorpados,
+            chás verdes delicados, iced teas refrescantes, cafés aromáticos e uma linha premium
+            para quem busca algo mais especial.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collection" id="colecao">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">coleção</span>
+          <h2>Escolhas da estação</h2>
+          <p>
+            Uma curadoria variada com sabores equilibrados, acabamento premium e fotos que
+            valorizam a experiência do produto.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img
+                src="https://images.pexels.com/photos/17719788/pexels-photo-17719788.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Chá verde servido em uma xícara elegante"
+              />
+              <span class="product-tag">chá verde</span>
+            </div>
+            <div class="product-body">
+              <h3>Sencha Verde</h3>
+              <p>
+                Perfil leve, fresco e equilibrado. Ideal para começar o dia com suavidade e clareza.
+              </p>
+              <div class="product-footer">
+                <strong>R$ 29,90</strong>
+                <button class="add-btn js-add-to-cart" type="button" data-id="1">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img
+                src="https://images.pexels.com/photos/19825164/pexels-photo-19825164.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Café especial em xícara elegante"
+              />
+              <span class="product-tag">café especial</span>
+            </div>
+            <div class="product-body">
+              <h3>Bourbon Especial</h3>
+              <p>
+                Café encorpado com aroma marcante e finalização aveludada para uma pausa mais intensa.
+              </p>
+              <div class="product-footer">
+                <strong>R$ 32,90</strong>
+                <button class="add-btn js-add-to-cart" type="button" data-id="2">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img
+                src="https://images.pexels.com/photos/28948772/pexels-photo-28948772.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Chá gelado servido com efeito refrescante"
+              />
+              <span class="product-tag">chá gelado</span>
+            </div>
+            <div class="product-body">
+              <h3>Limão & Hortelã</h3>
+              <p>
+                Refrescância equilibrada com acidez delicada, ideal para tardes quentes e dias leves.
+              </p>
+              <div class="product-footer">
+                <strong>R$ 27,90</strong>
+                <button class="add-btn js-add-to-cart" type="button" data-id="3">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img
+                src="https://images.pexels.com/photos/20013054/pexels-photo-20013054.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Chá preto em uma xícara de porcelana"
+              />
+              <span class="product-tag">linha premium</span>
+            </div>
+            <div class="product-body">
+              <h3>Assam Premium</h3>
+              <p>
+                Chá preto de presença elegante, sabor profundo e aroma sofisticado para consumo diário.
+              </p>
+              <div class="product-footer">
+                <strong>R$ 35,90</strong>
+                <button class="add-btn js-add-to-cart" type="button" data-id="4">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-tag">atendimento</span>
+          <h2>Receba seu pedido com praticidade.</h2>
+          <p>
+            Finalize seu pedido no carrinho com validação automática dos dados. O formulário
+            abaixo usa máscara no telefone e no CEP, além de validação em tempo real.
+          </p>
+        </div>
+
+        <form id="checkoutForm" class="checkout-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Telefone</label>
+            <input type="text" id="phone" name="phone" placeholder="(11) 99999-9999" />
+          </div>
+
+          <div class="form-row">
+            <label for="zip">CEP</label>
+            <input type="text" id="zip" name="zip" placeholder="00000-000" />
+          </div>
+
+          <div class="form-row">
+            <label for="address">Endereço</label>
+            <input type="text" id="address" name="address" placeholder="Rua, número, bairro" />
+          </div>
+
+          <div class="form-row">
+            <label for="payment">Forma de pagamento</label>
+            <select id="payment" name="payment">
+              <option value="">Selecione</option>
+              <option value="pix">PIX</option>
+              <option value="card">Cartão</option>
+              <option value="cash">Dinheiro</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary checkout-submit" type="submit">Finalizar pedido</button>
+          <p class="form-feedback js-form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer js-cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <span class="section-tag">carrinho</span>
+        <h2>Seu pedido</h2>
+      </div>
+      <button class="close-cart js-close-cart" type="button" aria-label="Fechar carrinho">✕</button>
+    </div>
+
+    <div class="cart-content">
+      <div class="cart-items js-cart-items"></div>
+
+      <div class="cart-summary">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <strong class="js-subtotal">R$ 0,00</strong>
+        </div>
+        <div class="summary-line">
+          <span>Entrega</span>
+          <strong>Calculada no checkout</strong>
+        </div>
+        <div class="summary-line total">
+          <span>Total</span>
+          <strong class="js-total">R$ 0,00</strong>
+        </div>
+      </div>
+
+      <button class="btn btn-secondary clear-cart js-clear-cart" type="button">Limpar carrinho</button>
+    </div>
+  </aside>
+
+  <div class="cart-mobile-bar">
+    <button class="cart-mobile-toggle js-open-cart" type="button">
+      Ver carrinho
+      <span class="js-cart-count-mobile">0</span>
+    </button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
